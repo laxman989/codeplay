@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 
 const PREFIX = "markdown"  
 
-const useLocalStorage = (key, initialValue) => {
+const useSessionStorage = (key, initialValue) => {
 
   const prefixedKey = PREFIX + key;
 
@@ -28,4 +28,4 @@ const useLocalStorage = (key, initialValue) => {
   return [value, setValue]
 }
 
-export default useLocalStorage
+export default useSessionStorage
